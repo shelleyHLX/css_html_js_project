@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 80px;
+    background-color: #07cbc9;
+}
+header .container{
+    width: 1200px;
+    margin: auto;
+}
+header .container .logo{
+    padding-top: 16px;
+    height: 48px;
+    float: left;
+
+}
+header .container .nav ul{
+    height: 80px;
+    list-style: none;
+}
+header .container .nav ul li{
+    line-height: 80px;
+    float: right;
+    text-align: center;
+    padding-right: 20px;
+}
+header .container .nav ul li:last-child{
+    padding-right: 0;
+}
+header .container .nav ul li a{
+    display: block;
+    height: 80px;
+    text-decoration: none;
+    /* 文字是哪个样式 */
+    font-size: 16px;
+    color: white;
+}
+
+.banner{
+    position: relative;
+    height: 600px;
+}
+
+.banner .imgs{
+    width: 100%;
+}
+
+.banner .imgs img{
+    width: 100%;
+    height: 600px;
+}
+.banner .cover{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0,0,0,.5);
+}
+.banner  .forms{
+    text-align: center;
+    /* 40*4+110+20*4=350 */
+    position: absolute;
+    height: 420px;
+    width: 504px;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -252px;
+    /* background-color: red; */
+
+}
+
+.banner  .forms .input-text{
+    font-size: 16px;
+    font-weight: bold;
+    display:block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #808080;
+    /* outline: none; */
+}
+
+
+.banner  .forms .input-textarea{
+    border-color: #808080;
+    font-size: 16px;
+    font-weight: bold;
+    height: 110px;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border: 2px solid #808080;
+}
+
+.banner  .forms .input-btn{
+    /* position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom:40px; */
+    font-size: 17px;
+    
+    color: #808080;
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid #808080;
+}
+
+/* title */
+.title{
+    width: 1200px;
+    margin: 0 auto;
+}
+.title h2{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 32px;
+}
+.title .line{
+    width: 60px;
+    height: 3px;
+    background: #07cbc9;
+    margin: 10px auto;
+}
+.title .title-description{
+    width: 450px;
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+    margin: 10px auto;
+}
+.img-text{
+    width: 1201px;
+    height: 464px;
+    position: relative;
+    margin: 30px auto;
+}
+.img-text .img{
+    width: 650px;
+    height: 100%;
+    margin: 30px auto;
+}
+
+.img-text .text1{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.img-text .text1 h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.img-text .text1 .explore{
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid gray;
+
+}
+.img-text .text1 p{
+    display: block;
+    
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.img-text .text1 .explore .btn{
+    display: block;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background-color: rgb(17, 16, 16);
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.img-text .text2{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.img-text .text2  .number1,.img-text .text2  .number2 {
+    border: 2px solid #07cbc9;
+}
+
+.img-text .text2  .number1 p, .img-text .text2  .number2 p{
+    padding-top: 40px;
+    width: 260px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+ .line{
+    width: 60px;
+    height: 3px;
+    background: #07cbc9;
+    margin: 10px auto;
+}
+.img-text .text2  .number1 .word, .img-text .text2  .number2 .word{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.img-text .text2  .number1{
+    margin-bottom: 40px;
+}
+
+/* 图文混排 */
+
+.img_discription{
+    overflow: hidden;
+    width: 100%;
+}
+.img_discription .box-img-text{
+    /* margin: 5px 0; */
+    float: left;
+    height: 380px;
+    width: 25%;
+    /* box-sizing:border-box;
+    padding: 0 20px; */
+    position: relative;
+}
+
+.img_discription .box-img-text:nth-child(2) .trangle, .img_discription .box-img-text:nth-child(4) .trangle{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: -100px;
+    /* border-right */
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-right-color: #07cbc9;
+}
+.img_discription .box-img-text:nth-child(5) .trangle, .img_discription .box-img-text:nth-child(7) .trangle{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: -100px;
+    /* border-right */
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-left-color: #07cbc9;
+    z-index: 9;
+}
+
+.img_discription img{
+    display: block;
+    height: 380px;
+    width: 100%;
+    /* background-size: contain; */
+}
+.img_discription .text{
+    /* padding-r: 20px; */
+    background-color:#07cbc9;
+    box-sizing:border-box;
+    padding: 0 20px;
+    text-align: center;
+}
+.img_discription .text h3{
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: left;
+}
+.img_discription .text p:nth-of-type(1){
+    font-size: 16px;
+    color: white;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.img_discription .text p:nth-of-type(2){
+    font-size: 14px;
+    color: gray;
+    text-align: left;
+}
+.img_discription .text .btn{
+    margin-top: 30px;
+    /* display: block; */
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 138px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+/* gallery */
+.gallery{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.gallery .gallery-title h2{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 32px; 
+}
+.gallery .gallery-title .discription{
+    width: 550px;
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+    margin: 10px auto;
+}
+.gallery .gallery-description{
+    width: 1200px;
+    /* width: 653px; */
+}
+.gallery .gallery-description dl{
+    margin-top: 30px;
+    float: left;
+    padding-right: 40px;
+}
+.gallery .gallery-description dl:nth-child(3n){
+    padding-right: 20px;
+}
+.gallery .gallery-description dl dt img{
+    display:block;
+}
+.gallery .gallery-description dl dd{
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding-left: 20px;
+    line-height: 50px;
+}
+footer{
+    height: 80px;
+    background-color: #07cbc9;
+    line-height: 80px;
+    text-align: center;
+}
